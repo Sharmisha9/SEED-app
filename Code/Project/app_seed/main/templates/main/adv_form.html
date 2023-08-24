@@ -1,0 +1,18 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    {% for instance in queryset %}
+        {{instance.soil_season}},
+        {{instance.temp}},
+        {{instance.humidity}},
+        {{instance.ph}},
+    {% endfor %}
+
+
+
+{% endblock content %}
+
+

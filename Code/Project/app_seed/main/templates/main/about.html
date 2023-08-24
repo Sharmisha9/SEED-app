@@ -1,0 +1,31 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="card-deck mb-3 text-center">
+
+    <div class="card mb-4 shadow-sm">
+      <div class="card-header bg-warning">
+        <h3 class="my-0 font-weight-normal">About Project </h3>
+      </div>
+      <div>
+        <h4 class="py-4">Motivations</h4>
+        <p>
+          Nowadays, there is a lot of scientific data that shows the alarming speed of global warming and desertification across the globe, 
+          even though we have advanced technology such as the James Webb Telescope that can find water and other chemical elements from hundreds and thousands of light years away. 
+          Our project “SEED” seems trivial, 
+          but we believe that it is a life and planet-saving project that will solve the eminent problem that our planet and humanity face.
+        </p>
+      </div>
+      <div class="card-body rounded mx-auto d-block">
+        <h4>General Application Design</h4>
+        <img  class="img-fluid" src="{% static 'images/diagram.png' %}" alt="project diagram" >
+      </div>
+    </div>
+
+  </section>
+
+
+  {% endblock content %}
